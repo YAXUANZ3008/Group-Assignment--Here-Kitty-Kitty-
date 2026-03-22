@@ -1,6 +1,7 @@
 # Group-Assignment--Here-Kitty-Kitty-
 CDS524 - Group Assignment -- Here, Kitty Kitty!
 # 小组课程项目 README
+# 小组课程项目 README
 
 ## 1. 项目简介
 本项目围绕“蔬果新鲜度与类别识别”任务开展，整体流程包括：
@@ -9,7 +10,15 @@ CDS524 - Group Assignment -- Here, Kitty Kitty!
 3. 模型训练与评估（ResNet18 与自建双任务 CNN）
 4. 可解释性与对比实验（Grad-CAM、混淆矩阵、消融实验）
 
-当前仓库中已包含我们阶段性代码、实验结果截图、训练好的模型权重以及报告相关材料。
+当前仓库中已包含我们阶段性代码、实验结果截图以及报告相关材料。
+
+## 1.1 模型权重下载（GitHub Releases）
+- 下载入口：https://github.com/YAXUANZ3008/Group-Assignment--Here-Kitty-Kitty-/releases/tag/v1.0.0
+- 需要下载的文件：
+  - `resnet_freeze_best.pth`
+  - `resnet_finetune_best.pth`
+  - `self_built_cnn_best.pth`
+- 建议下载后放到：`04_Model_Weights/`
 
 
 ## 2. 目录结构说明
@@ -120,7 +129,7 @@ jupyter notebook
 打开 `03_Modeling_Training&Evaluation.ipynb` 按单元顺序运行。
 
 说明：
-- 目录中已有训练好的权重文件（`.pth`），可直接用于复现实验展示。
+- 训练好的权重文件（`.pth`）请从 Releases 下载后放入 `04_Model_Weights/`。
 - 如果只需查看代码，也可打开 `notebook_extracted.py`。
 
 ---
